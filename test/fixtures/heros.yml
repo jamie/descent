@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  archetype: MyString
+  speed: 
+  health: 
+  stamina: 
+  defense: MyString
+  might: 
+  knowledge: 
+  willpower: 
+  awareness: 
+  hero_ability: MyText
+  heroic_feat: MyText
+
+two:
+  name: MyString
+  archetype: MyString
+  speed: 
+  health: 
+  stamina: 
+  defense: MyString
+  might: 
+  knowledge: 
+  willpower: 
+  awareness: 
+  hero_ability: MyText
+  heroic_feat: MyText
