@@ -3,8 +3,8 @@ class Hero < ActiveRecord::Base
     attr_reader :model
 
     contract do
-      property :name, validates: {presence: true}
-      property :archetype, validates: {presence: true}
+      property :name
+      property :archetype
       property :speed
       property :health
       property :stamina
@@ -15,13 +15,16 @@ class Hero < ActiveRecord::Base
       property :awareness
       property :hero_ability
       property :heroic_feat
+
+      validates :name, presence: true
+      validates :archetype, presence: true
     end
 
     def process(params)
       @model = Hero.new
 
-      validate(params[:hero], @model) do |f|
-        f.save
+      validate(params[:hero], @model) do |form|
+        form.save
       end
     end
   end
