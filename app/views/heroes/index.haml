@@ -1,0 +1,10 @@
+%h1 Heroes
+
+%p= link_to "New", new_hero_path
+
+- if @heroes.empty?
+  %h3 No Heroes
+- else
+  - @heroes.each do |hero|
+    = link_to hero.name, hero
+    - # cell(:hero, hero)
