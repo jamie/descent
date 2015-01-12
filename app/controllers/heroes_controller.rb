@@ -4,10 +4,13 @@ class HeroesController < ApplicationController
     render
   end
 
-  # def new
-  #   present Hero::Create
-  # end
-  #
+  def new
+    # TODO: Refactor to this?
+    # form Hero::Create
+    @hero = Hero.new
+    render
+  end
+
   # def create
   #   run Hero::Create
   # end

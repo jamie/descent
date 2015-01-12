@@ -21,4 +21,12 @@ class HeroesControllerTest < ActionController::TestCase
 
     response.body.must_match /Alys Rayne/
   end
+
+  test "GET /heroes/new" do
+    get :new
+
+    response.body.must_match /form/
+    response.body.must_match /archetype/
+  end
+
 end
