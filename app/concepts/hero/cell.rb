@@ -1,4 +1,4 @@
-class Hero::Cell < Cell::ViewModel
+class Hero::Cell < Cell::Concept
   def show
     render
   end

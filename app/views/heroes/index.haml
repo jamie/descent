@@ -7,5 +7,4 @@
 - else
   - @heroes.each do |hero|
     = link_to hero.name, hero
-    - # Doesn't work :(
-    - # cell(:hero, hero)
+    = concept("hero/cell", hero)
